@@ -172,6 +172,7 @@
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="App_Data\cursos.xml" />
     <Content Include="App_Data\cursos.xsl" />
+    <Content Include="App_Data\dropTipos.xsl" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.lumen.css" />
