@@ -13,5 +13,15 @@ namespace EDC2015_Trabalho2
         {
 
         }
+
+        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            XmlDataSource1.XPath = "/cursos/curso[@grau='"+ DropDownList1.SelectedValue  + "' and @local='"+ DropDownList2.SelectedValue + "']";
+        }
+
+        protected void DropDownList2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            XmlDataSource1.XPath = "/cursos/curso[@grau='"+ DropDownList1.SelectedValue + "' and @local='" + DropDownList2.SelectedValue + "']";
+        }
     }
 }

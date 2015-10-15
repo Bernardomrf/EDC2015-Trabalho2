@@ -40,6 +40,24 @@ namespace EDC2015_Trabalho2 {
         protected global::System.Web.UI.WebControls.XmlDataSource XmlDataSource2;
         
         /// <summary>
+        /// DropDownList2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList2;
+        
+        /// <summary>
+        /// XmlDataSource3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.XmlDataSource XmlDataSource3;
+        
+        /// <summary>
         /// GridView1 control.
         /// </summary>
         /// <remarks>
