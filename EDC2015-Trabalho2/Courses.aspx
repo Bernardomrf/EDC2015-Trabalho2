@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Courses.aspx.cs" Inherits="EDC2015_Trabalho2.Courses" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <asp:XmlDataSource ID="XmlDataSource1" runat="server" DataFile="~/App_Data/cursos.xml" TransformFile="~/App_Data/cursos.xsl" XPath="/cursos/curso[@grau='Licenciatura' and @local='Campus Universitário de Santiago, Aveiro']"></asp:XmlDataSource>
+    <asp:XmlDataSource ID="XmlDataSource1" runat="server" DataFile="~/App_Data/cursos.xml" TransformFile="~/App_Data/cursos.xsl"></asp:XmlDataSource>
     
     <div>
         <h1>Lista de Cursos</h1>
@@ -38,5 +38,11 @@
             <asp:BoundField DataField="local" HeaderText="local" SortExpression="local" />
         </Columns>
         <PagerStyle CssClass="pagination-ys" HorizontalAlign="Center" />
+        <EmptyDataTemplate>
+            <div class="alert alert-warning">
+                <h4>Atenção!</h4>
+                <p>Não há cursos desse tipo nessa instituição!</p>
+            </div>
+        </EmptyDataTemplate>
     </asp:GridView>
 </asp:Content>

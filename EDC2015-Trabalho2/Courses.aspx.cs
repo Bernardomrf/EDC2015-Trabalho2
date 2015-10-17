@@ -11,6 +11,11 @@ namespace EDC2015_Trabalho2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+                XmlDataSource1.XPath = "/cursos/curso[@grau='Licenciatura' and @local='Campus Universitário de Santiago, Aveiro']";
+
+            }
 
         }
 
@@ -25,3 +30,5 @@ namespace EDC2015_Trabalho2
         }
     }
 }
+
+//XPath="/cursos/curso[@grau='Licenciatura' and @local='Campus Universitário de Santiago, Aveiro']"
