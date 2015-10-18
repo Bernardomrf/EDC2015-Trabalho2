@@ -30,7 +30,7 @@
                     <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("guid") %>'></asp:TextBox>
                 </EditItemTemplate>
                 <ItemTemplate>
-                    <asp:Label ID="Label1" runat="server" Text='<%# Bind("guid") %>'></asp:Label>
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# Eval("guid","~/Course?ID={0}") %>' Text='<%# Bind("guid") %>'></asp:HyperLink>
                 </ItemTemplate>
             </asp:TemplateField>
             <asp:BoundField DataField="nome" HeaderText="nome" SortExpression="nome" />

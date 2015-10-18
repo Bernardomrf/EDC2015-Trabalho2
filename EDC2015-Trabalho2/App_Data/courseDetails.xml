@@ -1,0 +1,103 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="curso">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:byte" name="guid"/>
+        <xs:element type="xs:string" name="nome"/>
+        <xs:element type="xs:anyURI" name="imagem"/>
+        <xs:element type="xs:string" name="codigo"/>
+        <xs:element type="xs:string" name="grau"/>
+        <xs:element type="xs:byte" name="ciclo"/>
+        <xs:element type="xs:string" name="duracao"/>
+        <xs:element type="xs:string" name="ano_inicio"/>
+        <xs:element type="xs:string" name="regime"/>
+        <xs:element type="xs:string" name="horario"/>
+        <xs:element type="xs:string" name="propinas"/>
+        <xs:element type="xs:string" name="subsistema"/>
+        <xs:element name="areas">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="area"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="director">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="nome"/>
+              <xs:element type="xs:string" name="email"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="departamentos">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="departamento">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="nome"/>
+                    <xs:element type="xs:anyURI" name="url"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="medias">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="fase1"/>
+              <xs:element type="xs:byte" name="fase2"/>
+              <xs:element type="xs:byte" name="fase3"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="vagas">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:byte" name="fase1"/>
+              <xs:element type="xs:byte" name="fase2"/>
+              <xs:element type="xs:byte" name="fase3"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element type="xs:string" name="provas"/>
+        <xs:element type="xs:string" name="ano_info"/>
+        <xs:element type="xs:string" name="saidas_profissionais"/>
+        <xs:element type="xs:string" name="objectivos"/>
+        <xs:element type="xs:string" name="observacoes"/>
+        <xs:element type="xs:string" name="testemunho"/>
+        <xs:element type="xs:string" name="pre_requisitos"/>
+        <xs:element type="xs:string" name="local"/>
+        <xs:element type="xs:anyURI" name="urlmaisinfo"/>
+        <xs:element type="xs:anyURI" name="urlcandidaturas"/>
+        <xs:element type="xs:anyURI" name="urlmobilidade"/>
+        <xs:element name="m23">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="provas"/>
+              <xs:element type="xs:string" name="vagas"/>
+              <xs:element type="xs:anyURI" name="urlinfo"/>
+              <xs:element type="xs:string" name="observacoes"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="posgraduacoes">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="periodo"/>
+              <xs:element type="xs:string" name="corpo_docente"/>
+              <xs:element type="xs:string" name="destinatarios"/>
+              <xs:element type="xs:string" name="vagas"/>
+              <xs:element type="xs:string" name="vagas_obs"/>
+              <xs:element type="xs:string" name="urlmobilidade"/>
+              <xs:element type="xs:string" name="ano_info"/>
+              <xs:element type="xs:anyURI" name="edital"/>
+              <xs:element type="xs:string" name="ata"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
