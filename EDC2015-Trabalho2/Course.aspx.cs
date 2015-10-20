@@ -11,7 +11,8 @@ namespace EDC2015_Trabalho2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            string url = Request.QueryString["ID"];
+            XmlDataSource1.DataFile += url;
         }
     }
 }

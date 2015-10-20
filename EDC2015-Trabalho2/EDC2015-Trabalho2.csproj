@@ -170,8 +170,12 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
-    <Content Include="App_Data\cursos.xml" />
-    <Content Include="App_Data\cursos.xsl" />
+    <Content Include="App_Data\cursos.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\cursos.xsl">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="App_Data\dropLocais.xsl" />
     <Content Include="App_Data\dropTipos.xsl" />
     <Content Include="Contact.aspx" />
@@ -194,9 +198,12 @@
     <Content Include="App_Data\courseDetails.xml">
       <SubType>Designer</SubType>
     </Content>
-    <None Include="App_Data\curso.xsd">
+    <Content Include="App_Data\curso.xml">
       <SubType>Designer</SubType>
-    </None>
+    </Content>
+    <Content Include="App_Data\courseDetails.xsl">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
